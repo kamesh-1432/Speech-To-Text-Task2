@@ -1,1 +1,56 @@
+Libraries Used and Their Purpose:-
 
+Streamlit:-
+Description: A Python framework for building interactive web applications with minimal code.
+Purpose: Used to create a user-friendly web interface where users can upload WAV audio files, initiate transcription, and view the transcribed text.
+Installation:          "pip install streamlit"
+
+SpeechRecognition:-
+Description: A Python library for performing speech recognition, supporting multiple APIs like Google Speech Recognition.
+Purpose: Enables the app to transcribe audio from WAV files into text using the Google Speech Recognition API.
+Installation:        "pip install SpeechRecognition"
+
+Pyngrok:-
+Description: A Python wrapper for ngrok, a tool that creates secure public URLs for local web servers.
+Purpose: Used to expose the Streamlit app (running locally on port 8502) to a public URL, making it accessible online for testing or sharing.
+Installation:          "pip install pyngrok"
+
+OS:-
+Description: A standard Python library for interacting with the operating system.
+Purpose: Used to manage file operations (e.g., saving temporary audio files, checking for app.py, and terminating processes on port 8502) and execute system commands for process management.
+Installation:
+No installation required, as os is included in Python’s standard library.
+
+Subprocess:-
+Description: A standard Python library for running external system commands and processes.
+Purpose: Used to launch the Streamlit app as a subprocess on port 8502, allowing programmatic control of the server while ngrok creates a public URL.
+Installation:
+No installation required, as subprocess is included in Python’s standard library.
+
+Time:-
+Description: A standard Python library for handling time-related tasks.
+Purpose: Used to introduce a delay (time.sleep) to ensure the Streamlit server starts before ngrok attempts to connect, and to keep the script running with periodic checks.
+Installation:
+No installation required, as time is included in Python’s standard library.
+
+
+Why These Libraries Were Chosen:-
+
+Streamlit: Simplifies web app development, providing an intuitive interface for users to upload audio files and view transcription results.
+SpeechRecognition: Offers robust speech-to-text functionality with support for Google’s API, making it suitable for accurate audio transcription.
+Pyngrok: Facilitates easy sharing of the local Streamlit app by creating a public URL, ideal for testing or demo purposes.
+OS: Provides essential system-level operations for file handling and process management, ensuring smooth app execution.
+Subprocess: Enables seamless integration of the Streamlit server with ngrok, ensuring reliable app deployment.
+Time: Ensures proper timing for server startup and script execution, preventing connection issues with ngrok.
+Installation Steps
+
+To set up the environment for the Speech to Text App, run the following commands in your terminal or command prompt:-
+
+pip install streamlit
+pip install SpeechRecognition
+pip install pyngrok
+
+
+Note: Ensure you have Python installed (version 3.7 or higher recommended). The os, subprocess, and time libraries are part of Python’s standard library and require no additional installation. Additionally, the Google Speech Recognition API used by SpeechRecognition may require an internet connection and, in some cases, an API key for heavy usage (not configured in this code). Ensure app.py exists in the working directory before running the app.
+
+These libraries and installation steps enable the creation, deployment, and accessibility of a functional speech-to-text web app.

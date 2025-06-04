@@ -51,6 +51,8 @@ pip install SpeechRecognition
 pip install pyngrok
 
 
-Note: Ensure you have Python installed (version 3.7 or higher recommended). The os, subprocess, and time libraries are part of Python’s standard library and require no additional installation. Additionally, the Google Speech Recognition API used by SpeechRecognition may require an internet connection and, in some cases, an API key for heavy usage (not configured in this code). Ensure app.py exists in the working directory before running the app.
+Note: Ensure you have Python installed (version 3.7 or higher recommended). The os, subprocess, and time libraries are part of Python’s standard library and require no additional installation.
+Additionally, the Google Speech Recognition API used by SpeechRecognition may require an internet connection and, in some cases, an API key for heavy usage (not configured in this code).
+Ensure app.py exists in the working directory before running the app.
 
 These libraries and installation steps enable the creation, deployment, and accessibility of a functional speech-to-text web app.
